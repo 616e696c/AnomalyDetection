@@ -2,7 +2,7 @@
 
 namespace AnomalyDetectionTrainerAPI.Services
 {
-    public interface ITrainService
+    public interface IModelTrainerService
     {
         MulticlassClassificationMetrics Train(CancellationToken ct);
     }

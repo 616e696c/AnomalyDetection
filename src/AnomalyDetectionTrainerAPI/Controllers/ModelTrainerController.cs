@@ -6,12 +6,12 @@ namespace AnomalyDetectionTrainerAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class TrainController : ControllerBase
+    public class ModelTrainerController : ControllerBase
     {
-        private readonly ILogger<TrainController> _logger;
-        private readonly ITrainService _trainService;
+        private readonly ILogger<ModelTrainerController> _logger;
+        private readonly IModelTrainerService _trainService;
 
-        public TrainController(ILogger<TrainController> logger, ITrainService trainService)
+        public ModelTrainerController(ILogger<ModelTrainerController> logger, IModelTrainerService trainService)
         {
             _logger = logger;
             _trainService = trainService;   

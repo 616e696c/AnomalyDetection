@@ -6,7 +6,7 @@ using MulticlassClassificationMetrics = Microsoft.ML.Data.MulticlassClassificati
 
 namespace AnomalyDetectionTrainerAPI.Services
 {
-    public class TrainService: ITrainService
+    public class ModelTrainerService: IModelTrainerService
     {
         public MulticlassClassificationMetrics Train(CancellationToken ct)
         {
